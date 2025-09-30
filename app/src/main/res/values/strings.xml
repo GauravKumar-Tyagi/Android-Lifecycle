@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android-Lifecycles</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="transparent_activity">Transparent Activity</string>
+</resources>
