@@ -52,7 +52,7 @@ class TransparentActivity : AppCompatActivity() {
 
     override fun onTopResumedActivityChanged(isTopResumedActivity: Boolean) {
         super.onTopResumedActivityChanged(isTopResumedActivity)
-        Timber.i("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
+        Timber.e("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
     }
 
 }

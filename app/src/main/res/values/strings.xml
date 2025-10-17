@@ -4,4 +4,13 @@
     <string name="main_activity">Main Activity</string>
     <string name="second_activity">Second Activity</string>
     <string name="transparent_activity">Transparent Activity</string>
+    <string name="fragment_activity">Fragment Activity</string>
+    <string name="fragment_host_activity">Fragment Host Activity</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="replace_next_fragment">Replace Next Fragment</string>
+    <string name="add_next_fragment">Add Next Fragment</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="prev_fragment">Prev Fragment</string>
+    <string name="remove_fragment">Remove fragment</string>
+    <string name="add_fragment">Add fragment</string>
 </resources>

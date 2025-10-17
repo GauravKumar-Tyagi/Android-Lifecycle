@@ -10,6 +10,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="gray_dark">#272525</color>
+    <color name="gray_light">#BEBEBE</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="semi_transparent">#55FFFFFF</color>
 

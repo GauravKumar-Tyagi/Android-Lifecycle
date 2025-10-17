@@ -67,7 +67,7 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onTopResumedActivityChanged(isTopResumedActivity: Boolean) {
         super.onTopResumedActivityChanged(isTopResumedActivity)
-        Timber.i("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
+        Timber.e("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
         if (isTopResumedActivity) {
             progress.visibility = View.VISIBLE
         } else {

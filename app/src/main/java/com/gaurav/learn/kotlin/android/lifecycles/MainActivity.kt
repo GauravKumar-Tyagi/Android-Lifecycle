@@ -3,6 +3,7 @@ package com.gaurav.learn.kotlin.android.lifecycles
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.gaurav.learn.kotlin.android.lifecycles.fragments.FragmentHostActivity
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startNextActivity(view: View) {
         SecondActivity.start(this@MainActivity)
+    }
+
+    fun startFragmentHostActivity(view: View) {
+        FragmentHostActivity.start(this@MainActivity)
     }
 
     override fun onDestroy() {
@@ -53,7 +58,7 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onTopResumedActivityChanged(isTopResumedActivity: Boolean) {
         super.onTopResumedActivityChanged(isTopResumedActivity)
-        Timber.i("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
+        Timber.e("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~")
     }
 
 

@@ -33,11 +33,13 @@
             android:textColor="@android:color/white" />
 
         <Button
+            android:id="@+id/btnFragmentActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="startNextActivity"
-            android:text="@string/next_activity"
+            android:onClick="startFragmentHostActivity"
+            android:text="@string/fragment_activity"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
             android:textColor="@android:color/white" />
 
 
