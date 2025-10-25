@@ -36,6 +36,19 @@
 
         <activity android:name=".fragments.FragmentHostActivity"/>
 
+        <activity
+            android:name=".configChanges.ConfigChangeActivity"
+            android:windowSoftInputMode="stateUnchanged"
+            />
+
+        <!--
+        The `android:windowSoftInputMode="stateUnchanged"` attribute in
+        your `AndroidManifest.xml` controls how the soft keyboard behaves when the activity starts.
+        Specifically, `stateUnchanged` means the activity will not change the state
+        of the soft keyboard; it will remain as it was before the activity was started.
+        This is useful if you want to preserve the keyboard state when navigating between activities.
+        -->
+
 
     </application>
 

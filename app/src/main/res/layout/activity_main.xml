@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fadeScrollbars="false"
+    android:fillViewport="true"
     android:paddingLeft="16dp"
     android:paddingTop="24dp"
     android:paddingRight="16dp"
@@ -41,6 +42,16 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="20dp"
             android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnConfigChangeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startConfigChangeActivity"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Config Change Activity"
+            />
 
 
     </LinearLayout>

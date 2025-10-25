@@ -8,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.gaurav.learn.kotlin.android.lifecycles.R
 import timber.log.Timber
 
+/**
+ * WE CAN NOT HAVE ANY CONSTRUCTOR FOR OUR ACTIVITY
+ * EVEN WE CAN NOT HAVE DEFAULT NON-PARAMETERIZED CONSTRUCTOR FOR OUR ACTIVITY
+ */
 class FragmentHostActivity : AppCompatActivity() {
 
     private lateinit var btnAddRemoveFragment: Button
@@ -19,6 +23,9 @@ class FragmentHostActivity : AppCompatActivity() {
         Timber.i("~~~ onCreate() ~~~")
 
         super.onCreate(savedInstanceState)
+
+        isFragmentAdded = savedInstanceState?.getBoolean("isFragmentAdded", false) ?: false
+
         setContentView(R.layout.activity_fragment_host)
 
         btnAddRemoveFragment = findViewById(R.id.btnAddRemoveFragment)
@@ -59,6 +66,18 @@ class FragmentHostActivity : AppCompatActivity() {
             .remove(supportFragmentManager.findFragmentByTag("fragmentTag")!!)
             .commit()
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Timber.i("~~~ onSaveInstanceState()  outState=> $outState  ~~~ ")
+        outState.putBoolean("isFragmentAdded", isFragmentAdded)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Timber.i("~~~ onRestoreInstanceState()  savedInstanceState=> $savedInstanceState  ~~~ ")
+    }
+
 
     override fun onDestroy() {
         Timber.i("~~~ onDestroy() ~~~ ")

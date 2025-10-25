@@ -3,6 +3,7 @@ package com.gaurav.learn.kotlin.android.lifecycles
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.gaurav.learn.kotlin.android.lifecycles.configChanges.ConfigChangeActivity
 import com.gaurav.learn.kotlin.android.lifecycles.fragments.FragmentHostActivity
 import timber.log.Timber
 
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startFragmentHostActivity(view: View) {
         FragmentHostActivity.start(this@MainActivity)
+    }
+
+    fun startConfigChangeActivity(view: View) {
+        ConfigChangeActivity.start(this@MainActivity)
     }
 
     override fun onDestroy() {
