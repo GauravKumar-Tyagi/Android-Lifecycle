@@ -1,4 +1,4 @@
-package com.gaurav.learn.kotlin.android.lifecycles.configChanges
+package com.gaurav.learn.kotlin.android.lifecycles.configchanges
 
 import android.content.Context
 import android.content.Intent
@@ -60,7 +60,7 @@ class ConfigChangeActivity : AppCompatActivity(), ConfigChangeFragment.Listener 
 
     override fun onTopResumedActivityChanged(isTopResumedActivity: Boolean) {
         super.onTopResumedActivityChanged(isTopResumedActivity)
-        Timber.i("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~ ")
+        Timber.e("~~~ onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity  ~~~ ")
     }
 
     override fun onUserInputChanged(userInput: String) {

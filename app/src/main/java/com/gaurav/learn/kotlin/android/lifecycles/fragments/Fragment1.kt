@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.gaurav.learn.kotlin.android.lifecycles.MyDialogFragment
 import com.gaurav.learn.kotlin.android.lifecycles.R
 import timber.log.Timber
 
@@ -65,6 +66,12 @@ class Fragment1 : Fragment() {
                         .addToBackStack(null)
                         .commit()
                 }
+
+                findViewById<Button>(R.id.btnDialogFragment).setOnClickListener {
+                    val dialog = MyDialogFragment().newInstance("Dialog Title", "Dialog message")
+                    dialog.show(childFragmentManager, MyDialogFragment.TAG)
+                }
+
             }
         }
 

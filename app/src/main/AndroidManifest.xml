@@ -37,7 +37,7 @@
         <activity android:name=".fragments.FragmentHostActivity"/>
 
         <activity
-            android:name=".configChanges.ConfigChangeActivity"
+            android:name=".configchanges.ConfigChangeActivity"
             android:windowSoftInputMode="stateUnchanged"
             />
 
@@ -48,6 +48,12 @@
         of the soft keyboard; it will remain as it was before the activity was started.
         This is useful if you want to preserve the keyboard state when navigating between activities.
         -->
+
+        <activity
+            android:name=".configchanges.ManualConfigChangeActivity"
+            android:windowSoftInputMode="stateUnchanged"
+            android:configChanges="orientation|screenLayout|screenSize"
+            />
 
 
     </application>

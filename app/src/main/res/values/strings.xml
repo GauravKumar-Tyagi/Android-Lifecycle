@@ -13,4 +13,19 @@
     <string name="prev_fragment">Prev Fragment</string>
     <string name="remove_fragment">Remove fragment</string>
     <string name="add_fragment">Add fragment</string>
+    <string name="text">text</string>
+    <string name="manual_config_change_activity">Manual Config Change Activity</string>
+    <string name="landscape_mode">Landscape mode, Please check the lifecycle methods logs</string>
+    <string name="portrait_mode">Portrait mode, Please check the lifecycle methods logs</string>
+    <string name="config_change_activity">Config Change Activity</string>
+    <string name="alert_title">Alert Dialog Title</string>
+    <string name="alert_dialog_message">Alert Dialog Message</string>
+    <string name="setting">Setting</string>
+    <string name="ok">Ok</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_fragment">Dialog Fragment</string>
+    <string name="open_system_dialog_1">Open System Dialog 1</string>
+    <string name="open_system_dialog_2">Open System Dialog 2</string>
+    <string name="image">Image</string>
 </resources>

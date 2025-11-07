@@ -50,9 +50,58 @@
             android:onClick="startConfigChangeActivity"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="20dp"
-            android:text="Config Change Activity"
+            android:text="@string/config_change_activity"
             />
 
+        <Button
+            android:id="@+id/btnManualConfigChangeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startManualConfigChangeActivity"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/manual_config_change_activity"
+            />
+
+        <Button
+            android:id="@+id/btnAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showAlertDialog"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/alert_dialog"
+            />
+
+        <Button
+            android:id="@+id/btnDialogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDialogFragment"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dialog_fragment"
+            />
+
+        <Button
+            android:id="@+id/btnSystemDialog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSystemDialog1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/open_system_dialog_1"
+            />
+
+        <Button
+            android:id="@+id/btnSystemDialog2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSystemDialog2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/open_system_dialog_2"
+            />
 
     </LinearLayout>
 </ScrollView>

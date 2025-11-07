@@ -1,4 +1,4 @@
-package com.gaurav.learn.kotlin.android.lifecycles.configChanges
+package com.gaurav.learn.kotlin.android.lifecycles.configchanges
 
 import android.os.Bundle
 import android.view.LayoutInflater

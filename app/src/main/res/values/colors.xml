@@ -13,6 +13,7 @@
     <color name="gray_light">#BEBEBE</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="semi_transparent">#55FFFFFF</color>
-
+    <color name="button_secondary">#287AB1</color>
+    <color name="red">#C13D3D</color>>
 
 </resources>
